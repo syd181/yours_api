@@ -152,7 +152,7 @@ namespace API_Population.Controllers
         }
 
 
-*/
+
 
 
 
@@ -226,10 +226,12 @@ namespace API_Population.Controllers
 
             return NoContent();
         }
-
+ */
         private bool PopulationExists(int paysId , int annee)
         {
             return _context.Population.Any(p => p.PaysId == paysId && p.Annee == annee);
         }
+       
+
     }
 }
