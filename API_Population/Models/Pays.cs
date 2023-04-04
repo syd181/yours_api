@@ -1,4 +1,4 @@
-﻿/*namespace API_Population.Models
+﻿namespace API_Population.Models
 {
     
     public class Pays
@@ -17,4 +17,3 @@
    
     }
 }
- */

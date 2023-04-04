@@ -1,34 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\37719308\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {}
+    "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {}
   },
   "projects": {
-    "C:\\Users\\37719308\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {
+    "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\37719308\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
+        "projectUniqueName": "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
         "projectName": "API_Population",
-        "projectPath": "C:\\Users\\37719308\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
-        "packagesPath": "C:\\Users\\37719308\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\37719308\\Source\\Repos\\yours_api\\API_Population\\obj\\",
-=======
-    "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
-        "projectName": "API_Population",
-        "projectPath": "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
-        "packagesPath": "C:\\Users\\Mr AKPOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\obj\\",
->>>>>>> a437a38c62bb69ab8f2d85b17149f76fe6b5b45d
+        "projectPath": "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
+        "packagesPath": "C:\\Users\\junio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mr AKPOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -96,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
