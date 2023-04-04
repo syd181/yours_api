@@ -112,53 +112,7 @@ namespace API_Population.Controllers
         }
 
 
-        /*
-         * Frist
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutPays(int id, Pays pays)
-        {
-            if (id != pays.Id)
-            {
-                return BadRequest("L'id du pays n'ai pas correct");
-            }
-
-            var existingPays = await _context.Pays.Include(p => p.Populations)
-                                                  .FirstOrDefaultAsync(p => p.Id == id);
-            if (existingPays == null)
-            {
-                return NotFound();
-            }
-
-            existingPays.Country = pays.Country;
-            existingPays.Continent = pays.Continent;
-
-            if (pays.Populations != null)
-            {
-                if (existingPays.Populations== null)
-                {
-                    existingPays.Populations = new List<Population>();
-                }
-
-                foreach (var population in pays.Populations)
-                {
-                    var existingPopulation = existingPays.Populations.FirstOrDefault(p => p.Id == population.Id);
-                    if (existingPopulation == null)
-                    {
-                        existingPays.Populations.Add(population);
-                    }
-                    else
-                    {
-                            existingPopulation.Annee = population.Annee;
-                            existingPopulation.NbrHabitants = population.NbrHabitants;
-                    }
-                    
-                }
-            }
-            await _context.SaveChangesAsync();
-            return NoContent();
-        }
-        */
+     
 
        
         [HttpPut("{id}")]
