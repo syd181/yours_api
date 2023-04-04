@@ -55,7 +55,7 @@ namespace API_Population.Controllers
 
             return pays;
         }
-        /*
+        
 
         // GET: api/Population/afrique/2022
         // Obtenir la population d'un continent d'une année donnée
@@ -160,7 +160,7 @@ namespace API_Population.Controllers
             return NoContent();
         }
 
-
+        /*
         // DELETE: api/Pays/5
         // Methode qui va supprimer de la table un pays grace à son id 
         [HttpDelete("{id}")]
