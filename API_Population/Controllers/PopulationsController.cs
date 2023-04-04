@@ -124,7 +124,7 @@ namespace API_Population.Controllers
 
 
 
-        /*
+        
         [HttpPut("{paysId}/{annee}")]
         public async Task<IActionResult> PutPopulation(int paysId, int annee, Population population)
         {
@@ -226,7 +226,7 @@ namespace API_Population.Controllers
 
             return NoContent();
         }
- */
+ 
         private bool PopulationExists(int paysId , int annee)
         {
             return _context.Population.Any(p => p.PaysId == paysId && p.Annee == annee);
