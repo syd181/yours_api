@@ -33,7 +33,7 @@ namespace API_Population.Controllers
             return await _context.Population.ToListAsync();
         }
 
-        /*
+        
 
         // GET: api/Populations/5
         // Avec cette methode on peut avoir la liste des populations d'un Pays spécifique en fournissant son Id
@@ -54,7 +54,7 @@ namespace API_Population.Controllers
             return populations;
         }
 
-        */
+        
 
         // GET: api/Population/5/2022
         // Obtenir la population d'un pays d'une année donnée
@@ -73,7 +73,7 @@ namespace API_Population.Controllers
 
         }
 
-        /*
+        
 
         // Mettre juste dans le route le put sans param
         // PUT: api/Populations/5/2022
