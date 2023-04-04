@@ -114,7 +114,7 @@ namespace API_Population.Controllers
 
 
      
-        /*
+        
        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPays(int id, Pays pays)
