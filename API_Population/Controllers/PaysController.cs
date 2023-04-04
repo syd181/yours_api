@@ -160,7 +160,7 @@ namespace API_Population.Controllers
             return NoContent();
         }
 
-        /*
+        
         // DELETE: api/Pays/5
         // Methode qui va supprimer de la table un pays grace à son id 
         [HttpDelete("{id}")]
@@ -188,7 +188,7 @@ namespace API_Population.Controllers
             return (_context.Pays?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-        */
+        
 
         /* 
          * Conclusion : Le CRUD est bon pour L'API Pays 

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {}
+    "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {
+    "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
+        "projectUniqueName": "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
         "projectName": "API_Population",
-        "projectPath": "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
-        "packagesPath": "C:\\Users\\Mr AKPOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mr AKPOVO\\Source\\Repos\\yours_api\\API_Population\\obj\\",
+        "projectPath": "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\API_Population.csproj",
+        "packagesPath": "C:\\Users\\junio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\junio\\Source\\Repos\\yours_api\\API_Population\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Mr AKPOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\junio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
