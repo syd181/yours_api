@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:API_PopulationContext"
+    },
+    "apis1": {
+      "type": "apis"
+    }
+  }
+}
