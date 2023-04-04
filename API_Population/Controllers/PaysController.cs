@@ -160,7 +160,7 @@ namespace API_Population.Controllers
             return NoContent();
         }
 
-
+        /*
         // DELETE: api/Pays/5
         // Methode qui va supprimer de la table un pays grace à son id 
         [HttpDelete("{id}")]
