@@ -55,7 +55,7 @@ namespace API_Population.Controllers
 
             return pays;
         }
-        /*
+        
 
         // GET: api/Population/afrique/2022
         // Obtenir la population d'un continent d'une année donnée
@@ -106,7 +106,7 @@ namespace API_Population.Controllers
             }
 
             _context.Pays.AddRange(paysList);
-            await _context.SaveChangesAsync();
+            //await _context.SaveChangesAsync();
 
             return NoContent();//CreatedAtAction(nameof(GetPays), new { }, paysList);
             //NoContent();
@@ -114,7 +114,7 @@ namespace API_Population.Controllers
 
 
      
-
+        /*
        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPays(int id, Pays pays)
