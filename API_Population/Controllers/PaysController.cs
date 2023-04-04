@@ -40,6 +40,7 @@ namespace API_Population.Controllers
 
 
         
+        
         // GET: api/Pays/5
         // On va pouvoir avec cette méthode récupérer juste un seul pays en fournissant son id 
         [HttpGet("{id}")]
@@ -54,7 +55,7 @@ namespace API_Population.Controllers
 
             return pays;
         }
-
+        /*
 
         // GET: api/Population/afrique/2022
         // Obtenir la population d'un continent d'une année donnée
@@ -187,13 +188,14 @@ namespace API_Population.Controllers
             return (_context.Pays?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-      
+        */
+
         /* 
          * Conclusion : Le CRUD est bon pour L'API Pays 
          * Test réalisé le 13/03/23
          * Sydney A. + jeff et junior
          */
 
-        
+
     }
 }
