@@ -20,7 +20,7 @@ namespace API_Population.Controllers
         {
             _context = context;
         }
-
+        /*
         // GET: api/Populations
         // Nous permet d'avoir la liste des populations presente dans la BDD
         [HttpGet]
@@ -70,7 +70,7 @@ namespace API_Population.Controllers
 
         }
 
-        
+        */
 
         // Mettre juste dans le route le put sans param
         // PUT: api/Populations/5/2022
