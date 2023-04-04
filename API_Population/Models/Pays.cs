@@ -1,5 +1,6 @@
-﻿namespace API_Population.Models
+﻿/*namespace API_Population.Models
 {
+    
     public class Pays
     {
         // id du pays pour l'identifier de mamière unique
@@ -13,5 +14,7 @@
 
         //La liste de population de ce pays, nous permet d'avoir accés à la classe population
         public ICollection<Population> Populations { get; set; }
+   
     }
 }
+ */
