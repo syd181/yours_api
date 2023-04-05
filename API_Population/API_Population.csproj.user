@@ -12,7 +12,7 @@
     <WebStackScaffolding_DbContextTypeFullName>API_Population.Data.API_PopulationContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
-    <NameOfLastUsedPublishProfile>C:\Users\aizan\source\repos\API_Population\API_Population\Properties\PublishProfiles\APIPopulation20230320151016 - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\Mr AKPOVO\Source\Repos\yours_api\API_Population\Properties\PublishProfiles\APIPopulation20230320151016 - Web Deploy1.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>

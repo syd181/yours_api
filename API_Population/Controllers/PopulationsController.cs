@@ -20,20 +20,18 @@ namespace API_Population.Controllers
         {
             _context = context;
         }
-        
+
         // GET: api/Populations
         // Nous permet d'avoir la liste des populations presente dans la BDD
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Population>>> GetPopulation()
         {
-          if (_context.Population == null)
-          {
-              return NotFound();
-          }
+            if (_context.Population == null)
+            {
+                return NotFound();
+            }
             return await _context.Population.ToListAsync();
         }
-
-        
 
         // GET: api/Populations/5
         // Avec cette methode on peut avoir la liste des populations d'un Pays spécifique en fournissant son Id
@@ -46,15 +44,14 @@ namespace API_Population.Controllers
                 .ToListAsync();
 
             if (populations == null || populations.Count == 0)
-  
+
             {
-              return NotFound();
+                return NotFound();
             }
 
             return populations;
         }
 
-        
 
         // GET: api/Population/5/2022
         // Obtenir la population d'un pays d'une année donnée
@@ -73,7 +70,7 @@ namespace API_Population.Controllers
 
         }
 
-        
+
 
         // Mettre juste dans le route le put sans param
         // PUT: api/Populations/5/2022
@@ -87,8 +84,8 @@ namespace API_Population.Controllers
             {
                 return BadRequest();
             }
-            
-            var existingPopulation = await _context.Population.FirstOrDefaultAsync(p => p.Id == id && p.Annee == annee );
+
+            var existingPopulation = await _context.Population.FirstOrDefaultAsync(p => p.Id == id && p.Annee == annee);
 
             if (existingPopulation == null)
             {
@@ -118,38 +115,9 @@ namespace API_Population.Controllers
 
         }
 
-        
 
 
 
-
-
-        
-        [HttpPut("{paysId}/{annee}")]
-        public async Task<IActionResult> PutPopulation(int paysId, int annee, Population population)
-        {
-            if (paysId != population.PaysId || annee != population.Annee)
-            {
-                return BadRequest();
-            }
-
-            var existingPopulation = await _context.Population.FindAsync(paysId, annee);
-
-            if (existingPopulation == null)
-            {
-                // Ajouter une nouvelle entité Population
-                _context.Population.Add(population);
-                await _context.SaveChangesAsync();
-                return CreatedAtAction(nameof(GetPopulation), new { paysId = population.PaysId, annee = population.Annee }, population);
-            }
-            else
-            {
-                // Mettre à jour l'entité Population existante
-                _context.Entry(existingPopulation).CurrentValues.SetValues(population);
-                await _context.SaveChangesAsync();
-                return NoContent();
-            }
-        }
 
 
 
@@ -169,18 +137,18 @@ namespace API_Population.Controllers
 
             foreach (var population in populations)
             {
-                if (population.Annee <0)
+                if (population.Annee < 0)
                 {
                     return BadRequest("L'année doit etre supérieure à 0");
                 }
 
-                if(population.NbrHabitants <0)
+                if (population.NbrHabitants < 0)
                 {
                     return BadRequest("Le nombre d'habitants doit etre supérieur ou égal à 0");
                 }
 
-                var pays =  await _context.Pays.FindAsync(population.PaysId);
-                if(pays == null)
+                var pays = await _context.Pays.FindAsync(population.PaysId);
+                if (pays == null)
                 {
                     return BadRequest("Le pays spécifié n'existe pas.");
                 }
@@ -188,7 +156,7 @@ namespace API_Population.Controllers
                 population.PaysId = pays.Id;
                 _context.Population.Add(population);
 
-                
+
             }
 
             await _context.SaveChangesAsync();
@@ -205,7 +173,7 @@ namespace API_Population.Controllers
         [HttpDelete("{paysId}/{annee}")]
         public async Task<IActionResult> DeletePopulation(int paysId, int annee)
         {
-            var pays = await _context.Pays.FindAsync(paysId); 
+            var pays = await _context.Pays.FindAsync(paysId);
             if (pays == null)
 
             {
@@ -213,7 +181,7 @@ namespace API_Population.Controllers
             }
 
             var population = await _context.Population
-                .SingleOrDefaultAsync(p => p.PaysId == pays.Id &&  p.Annee == annee);
+                .SingleOrDefaultAsync(p => p.PaysId == pays.Id && p.Annee == annee);
 
 
             if (population == null)
@@ -226,12 +194,11 @@ namespace API_Population.Controllers
 
             return NoContent();
         }
- 
-        private bool PopulationExists(int paysId , int annee)
+
+        private bool PopulationExists(int paysId, int annee)
         {
             return _context.Population.Any(p => p.PaysId == paysId && p.Annee == annee);
         }
-       
-
     }
 }
+

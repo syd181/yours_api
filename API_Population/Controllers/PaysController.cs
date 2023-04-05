@@ -39,8 +39,7 @@ namespace API_Population.Controllers
         }
 
 
-        
-        
+
         // GET: api/Pays/5
         // On va pouvoir avec cette méthode récupérer juste un seul pays en fournissant son id 
         [HttpGet("{id}")]
@@ -55,7 +54,7 @@ namespace API_Population.Controllers
 
             return pays;
         }
-        
+
 
         // GET: api/Population/afrique/2022
         // Obtenir la population d'un continent d'une année donnée
@@ -106,16 +105,15 @@ namespace API_Population.Controllers
             }
 
             _context.Pays.AddRange(paysList);
-            //await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
 
             return NoContent();//CreatedAtAction(nameof(GetPays), new { }, paysList);
             //NoContent();
         }
 
 
-     
-        
-       
+
+
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPays(int id, Pays pays)
         {
@@ -146,9 +144,9 @@ namespace API_Population.Controllers
                     }
                     else
                     {
-                            existingPopulation.Annee = population.Annee;
-                            existingPopulation.NbrHabitants = population.NbrHabitants;
-                        
+                        existingPopulation.Annee = population.Annee;
+                        existingPopulation.NbrHabitants = population.NbrHabitants;
+
 
                     }
 
@@ -160,7 +158,7 @@ namespace API_Population.Controllers
             return NoContent();
         }
 
-        
+
         // DELETE: api/Pays/5
         // Methode qui va supprimer de la table un pays grace à son id 
         [HttpDelete("{id}")]
@@ -188,14 +186,14 @@ namespace API_Population.Controllers
             return (_context.Pays?.Any(e => e.Id == id)).GetValueOrDefault();
         }
 
-        
 
         /* 
          * Conclusion : Le CRUD est bon pour L'API Pays 
-         * Test réalisé le 13/03/23
+         * Test réalisé le 04/04/23
          * Sydney A. + jeff et junior
          */
 
 
     }
 }
+
